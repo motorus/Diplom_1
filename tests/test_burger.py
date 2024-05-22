@@ -84,7 +84,7 @@ class TestBurger:
             ingredient = Ingredient(INGREDIENT_TYPE_SAUCE + str(i), "ingredient_name_" + str(i), i * 2)
             burger.add_ingredient(ingredient)
         receipt = burger.get_receipt()
-        print(receipt)
+        
 
         assert receipt == ('(==== Bun_name ====)\n'
                            '= sauce0 ingredient_name_0 =\n'
